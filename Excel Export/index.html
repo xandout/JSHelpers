@@ -1,0 +1,22 @@
+<html>
+	<head>
+	<script type="text/javascript" src="ejs_production.js"></script>
+	</head>
+	<body>
+	
+	<pre>
+		<textarea rows="100" cols="300" id="result"></textarea>
+	</pre>
+	<script type="text/javascript">
+	//
+	var data = {
+		header: ['col1', 'col2', 'col3'],
+		rows: [['data1', 'data2', 'data3'],['data1', 'data2', 'data3'],['data1', 'data2', 'data3']]
+	}
+
+	var xml = new EJS({url: 'sheet.ejs'}).render(data);
+	var result = document.getElementById('result');
+	result.value = xml;
+	</script>
+	</body>
+</html>
