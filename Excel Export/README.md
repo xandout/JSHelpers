@@ -11,3 +11,10 @@ Generate Excel 2003 XML Spreadsheet
 	}
 
 	var xml = new EJS({url: 'sheet.ejs'}).render(data);
+
+
+TODO
+=========
+*Allow header = null
+*Allow sheet naming
+*Provide example to download completed spreadsheet
