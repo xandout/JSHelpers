@@ -15,6 +15,9 @@ Generate Excel 2003 XML Spreadsheet
 
 TODO
 =========
-*Allow header = null
-*Allow sheet naming
-*Provide example to download completed spreadsheet
+* Allow header = null
+
+* Allow sheet naming
+
+* Provide example to download completed spreadsheet
+
