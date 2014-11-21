@@ -1,0 +1,22 @@
+<html>
+	<head>
+	<script type="text/javascript" src="ejs_production.js"></script>
+	</head>
+	<body>
+	
+	<pre>
+		<div id="result"></div>
+	</pre>
+	<script type="text/javascript">
+	//
+	var data = {
+		header: ['col1', 'col2', 'col3'],
+		rows: [['data1', 'data2', 'data3'],['data1', 'data2', 'data3'],['data1', 'data2', 'data3']]
+	}
+
+	var table = new EJS({url: 'table.ejs'}).render(data);
+	var result = document.getElementById('result');
+	result.innerHTML = table;
+	</script>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+<table>
+	<tr>
+	<% header.forEach(function(column, index){ %>
+		<td><%= column %></td>
+	<% }); %>
+	</tr>
+	<% rows.forEach(function(row, index){ %>
+	<tr>
+		<% row.forEach(function(cell, index){ %>
+			<td><%= cell %></td>
+		<% }); %>
+	</tr>
+	<% }); %>
+</table>
